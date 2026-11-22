@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Tajne / lokalna podešavanja
+.env
+*.env
+
+# Editor / OS
+.idea/
+*.swp
+*~
+.DS_Store
