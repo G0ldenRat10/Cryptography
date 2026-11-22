@@ -1,7 +1,7 @@
 # Cryptography
 
-Kod, zadaci i CTF rešenja iz kriptografije.
+Code, assignments and CTF solutions from my cryptography studies.
 
-## Sadržaj
+## Contents
 
-- [MTP-Stanford-Assignment-CTF](MTP-Stanford-Assignment-CTF/) — napad na Many-Time Pad (Stanford Cryptography I): dešifrovanje ciljnog ciphertexta pomoću XOR-a više poruka šifrovanih istim ključem.
+- [MTP-Stanford-Assignment-CTF](MTP-Stanford-Assignment-CTF/) — Many-Time Pad attack (Stanford Cryptography I): decrypting a target ciphertext by XOR-ing multiple messages encrypted with the same key.
