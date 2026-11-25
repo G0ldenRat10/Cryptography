@@ -2,6 +2,11 @@ import hashlib
 import hmac
 import secrets
 
+# master key za testiranje
+
+master_key = secrets.token_bytes(16) # == 128 bitova
+print(master_key)
+
 # bitvajs funkcije za osnovni rad 
 
 def mask(n: int) -> int:
@@ -14,3 +19,7 @@ def split(block: int, n: int) -> tuple[int,int]:
 
 def join(L: int, R: int, n: int) -> int:
         return (L << n) | R
+
+# funkcije rundi i kljucevi rundi
+
+
