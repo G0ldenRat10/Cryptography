@@ -23,5 +23,5 @@ def join(L: int, R: int, n: int) -> int:
 
 # funkcije rundi i kljucevi rundi
 
-def F(key: bytes, x: int, n: int) -> int:
+def F(key: bytes, x: int, n: int) -> int:   # key = master_key; x = L -> x; n = broj bajtova (8)
      return 0
