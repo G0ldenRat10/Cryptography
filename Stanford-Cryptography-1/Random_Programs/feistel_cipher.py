@@ -6,5 +6,10 @@ import secrets
 def mask(n: int) -> int:
     return (1 << n) - 1;
 
+def split(block: int, n: int) -> tuple[int,int]:
+    L = block >> n
+    R = block & mask(n) 
+    return [L, R]
 
-print(mask(4))
+def join(L: int, R: int, n: int) -> int:
+        return (L << n) | R
