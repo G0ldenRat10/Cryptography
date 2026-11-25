@@ -1,4 +1,4 @@
-# Python
+# python
 __pycache__/
 *.py[cod]
 .venv/
@@ -6,11 +6,11 @@ venv/
 env/
 .ipynb_checkpoints/
 
-# Tajne / lokalna podešavanja
+# local
 .env
 *.env
 
-# Editor / OS
+# editor
 .idea/
 *.swp
 *~

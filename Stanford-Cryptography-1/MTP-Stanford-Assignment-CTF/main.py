@@ -1,4 +1,4 @@
-# Cipher's:
+# sifrati:
 
 ciphertexts = [
     # 1
