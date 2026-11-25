@@ -25,3 +25,6 @@ def join(L: int, R: int, n: int) -> int:
 
 def F(key: bytes, x: int, n: int) -> int:   # key = master_key; x = L -> x; n = broj bajtova (8)
     nbytes = (n+7) // 8                     # zbog +7 (najveci ostatak pri deljenju sa 8), svaki n koji nije deljiv sa 8 predje na sledeci ceo kolicnik, a deljiv ne
+    xb = x.to_bytes(nbytes, "big")
+    h = hmac.new(key, xb, hashlib.sha256)
+    digest = h.digest()
