@@ -5,7 +5,7 @@ import secrets
 # master key za testiranje
 
 master_key = secrets.token_bytes(16) # == 128 bitova
-print(master_key)
+# print(master_key.hex())
 
 # bitvajs funkcije za osnovni rad 
 
