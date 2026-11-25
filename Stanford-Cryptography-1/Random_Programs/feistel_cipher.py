@@ -2,6 +2,7 @@ import hashlib
 import hmac
 import secrets
 
+# bitvajs funkcije za osnovni rad 
 
 def mask(n: int) -> int:
     return (1 << n) - 1;
