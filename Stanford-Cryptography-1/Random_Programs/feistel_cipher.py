@@ -20,6 +20,8 @@ def split(block: int, n: int) -> tuple[int,int]:
 def join(L: int, R: int, n: int) -> int:
         return (L << n) | R
 
+
 # funkcije rundi i kljucevi rundi
 
-
+def F(key: bytes, x: int, n: int) -> int:
+     
