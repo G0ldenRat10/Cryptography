@@ -8,6 +8,7 @@ Remember the flag format and how it might help you in this challenge!
 """
 
 from Crypto.Util.strxor import strxor
+from itertools import cycle           # automatski pnavlja kljuc dokle god da je potrebno
 
 cipher = bytes.fromhex("0e0b213f26041e480b26217f27342e175d0e070a3c5b103e2526217f27342e175d0e077e263451150104")
 print(f"Lenght of cipher in bytes: {len(cipher)}")
@@ -22,7 +23,8 @@ key = key_part + b'y'
 print(f"Current key: {key}")
 print(f"Lenght of key in bytes: {len(key)}")
 
-# flag = cipher XOR key (asocijativnost)
+# flag = cipher XOR key (asocijativnost) 
+# (cipher = 42 bajta, key = 8, isti kljuc mora redom da se izvrsava vise puta dok ne dodje do 42)
 flag = bytes(c ^ k for c, k in zip(cipher, key))
 
 
