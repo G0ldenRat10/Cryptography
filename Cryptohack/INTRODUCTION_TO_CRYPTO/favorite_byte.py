@@ -12,6 +12,6 @@ cipher = bytes.fromhex("73626960647f6b206821204f21254f7d694f7624662065622127234f
 for byte in cipher:
     print(byte)
 # Jedan Byte ima 8 bitova, 2 na 8i stepen = 256 => 0 - 255
-for key in range(256):
+#for key in range(256):
 
         
