@@ -20,7 +20,8 @@ The Python pwntools library has a convenient xor() function that can XOR togethe
 But first, you may want to implement your own function to solve this. 
 
 """
-
+# Prvi pokusaj:
+"""
 s = "label"
 n = 13 
 
@@ -42,5 +43,14 @@ def challenge(s,n):
     return flag
 
 print(f"The flag is crypto/{challenge(s,n)}/")
+"""
 
+# Drugi pokusaj:
+
+text = "label"
+key = 13
+
+def challenge(text, key):
+    return ''.join(chr(ord(char) ^ key) for char in text)
+print(f"The flag is: crypto/{challenge(text,key)}/")
 
