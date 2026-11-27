@@ -37,8 +37,10 @@ flagXORkey1XORkey3XORkey2 = bytes.fromhex("04ee9855208a2cd59091d04767ae47963170d
 
 # Jedan nacin:
 key2 = bytes(a ^ b for a, b in zip(key2XORkey1, key1))  # zip spaja npr: a = [1,2,3] b = [4,5,6] u [(1,4),(2,5),(3,6)]
-print(key2)
-# Drugi nacin:
+
+# Drugi nacin (drzim se drugog):
 key2 = strxor(key2XORkey1,key1)
-print(key2)
+
+
+
 
