@@ -41,6 +41,6 @@ key2 = bytes(a ^ b for a, b in zip(key2XORkey1, key1))  # zip spaja npr: a = [1,
 # Drugi nacin (drzim se drugog):
 key2 = strxor(key2XORkey1,key1)
 
-
+key3 = strxor(key2XORkey3,key2)
 
 
