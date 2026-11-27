@@ -20,6 +20,7 @@ known = b"crypto{"
 key_part = bytes(c ^ k for c, k in zip(cipher,known))  # kad istekne known i ostane ostatak cipher-a ne uparuje ga dalje nisacim
 key = key_part + b'y'
 print(f"Current key: {key}")
+print(f"Lenght of key in bytes: {len(key)}")
 
 # flag = cipher XOR key (asocijativnost)
 flag_part = bytes(c ^ k for c, k in zip(cipher, key))
