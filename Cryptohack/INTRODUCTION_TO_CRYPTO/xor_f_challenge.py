@@ -23,7 +23,7 @@ print(f"Current key: {key}")
 print(f"Lenght of key in bytes: {len(key)}")
 
 # flag = cipher XOR key (asocijativnost)
-flag_part = bytes(c ^ k for c, k in zip(cipher, key))
-print(flag_part)
+flag = bytes(c ^ k for c, k in zip(cipher, key))
+
 
 
