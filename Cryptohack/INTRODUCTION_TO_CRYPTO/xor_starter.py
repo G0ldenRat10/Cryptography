@@ -20,3 +20,5 @@ The Python pwntools library has a convenient xor() function that can XOR togethe
 But first, you may want to implement your own function to solve this. 
 
 """
+import pwntools
+
