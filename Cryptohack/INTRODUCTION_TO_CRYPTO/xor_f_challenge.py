@@ -16,5 +16,7 @@ cipher = bytes.fromhex("0e0b213f26041e480b26217f27342e175d0e070a3c5b103e2526217f
 known = b"crypto{"
 
 # mora ZIP jer CIPHER i deo flag-a nisu iste duzine pa nije moguc XOR sa strxor
-key_part = bytes(c ^ k for c, k in zip(cipher,known))
+key_part = bytes(c ^ k for c, k in zip(cipher,known))  # kad istekne known i ostane ostatak cipher-a ne uparuje ga dalje nisacim
+print(key_part)
+
 
