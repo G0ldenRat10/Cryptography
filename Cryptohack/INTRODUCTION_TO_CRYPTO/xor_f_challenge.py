@@ -10,6 +10,7 @@ Remember the flag format and how it might help you in this challenge!
 from Crypto.Util.strxor import strxor
 
 cipher = bytes.fromhex("0e0b213f26041e480b26217f27342e175d0e070a3c5b103e2526217f27342e175d0e077e263451150104")
+print(f"Lenght of cipher in bytes: {len(cipher)}")
 
 # cipher = flag XOR key => key = cipher XOR flag (ja imam jedan deo flag-a)
 
@@ -21,6 +22,6 @@ key = key_part + b'y'
 print(f"Current key: {key}")
 
 # flag = cipher XOR key (asocijativnost)
-flag = strxor(cipher)
+#flag = strxor(cipher)
 
 
