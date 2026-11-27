@@ -20,4 +20,7 @@ key_part = bytes(c ^ k for c, k in zip(cipher,known))  # kad istekne known i ost
 key = key_part + b'y'
 print(f"Current key: {key}")
 
+# flag = cipher XOR key (asocijativnost)
+flag = strxor(cipher)
+
 
