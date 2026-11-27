@@ -25,7 +25,23 @@ print(f"Lenght of key in bytes: {len(key)}")
 
 # flag = cipher XOR key (asocijativnost) 
 # (cipher = 42 bajta, key = 8, isti kljuc mora redom da se izvrsava vise puta dok ne dodje do 42)
-flag = bytes(c ^ k for c, k in zip(cipher, key))
+flag = bytes(c ^ k for c, k in zip(cipher, cycle(key))) # cycle(key) ovde resava problem 
 
+"""
+Ako je dužina ključa 8, dobijaš:
+(kako radi unutar cycle(key)-a)
+i	i % 8
+0	  0
+1	  1
+2	  2
+3	  3
+4	  4
+5	  5
+6	  6
+7	  7
+8	  0
+9	  1
+10	  2
+"""
 
 
