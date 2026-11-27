@@ -45,5 +45,3 @@ i	i % 8(duzina kljuca)
 9	        1
 10	        2
 """
-
-
