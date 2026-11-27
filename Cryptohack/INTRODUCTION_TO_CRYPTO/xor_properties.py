@@ -49,6 +49,6 @@ flag = strxor(
     strxor(key3, key1)
 )
 
-print(f"Flag je: crypto/{flag}/")
+print(f"Flag je: {flag}")
 
 
