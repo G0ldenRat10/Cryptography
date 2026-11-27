@@ -28,6 +28,7 @@ FLAG ^ KEY1 ^ KEY3 ^ KEY2 = 04ee9855208a2cd59091d04767ae47963170d1660df7f56f5faf
 Before you XOR these objects, be sure to decode from hex to bytes.
 
 """
+from Crypto.Util.strxor import strxor
 
 key1 = bytes.fromhex("a6c8b6733c9b22de7bc0253266a3867df55acde8635e19c73313")
 key2XORkey1 = bytes.fromhex("37dcb292030faa90d07eec17e3b1c6d8daf94c35d4c9191a5e1e")
