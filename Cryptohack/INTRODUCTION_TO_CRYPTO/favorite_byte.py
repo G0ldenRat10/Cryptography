@@ -12,3 +12,4 @@ cipher = bytes.fromhex("73626960647f6b206821204f21254f7d694f7624662065622127234f
 
 for key in range(256):
     result = strxor(cipher, key)
+    print(key, result)
