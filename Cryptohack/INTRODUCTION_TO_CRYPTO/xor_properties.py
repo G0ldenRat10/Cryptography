@@ -43,7 +43,11 @@ key2 = strxor(key2XORkey1,key1)
 # -->
 key3 = strxor(key2XORkey3,key2)
 # -->
-flag = strxor(flagXORkey1XORkey3XORkey2, key1, key2, key3)
+# Ugnjezdeni strxor
+flag = strxor(
+    strxor(flagXORkey1XORkey3XORkey2, key2),
+    strxor(key3, key1)
+)
 
 print(f"Flag je: crypto/{flag}/")
 
