@@ -35,5 +35,12 @@ def challenge(s,n):
         xored_13_unicode_s.append(n ^ 13)
     print(f"After XOR with 13: {xored_13_unicode_s}")
 
+    flag = ""
+    for n in xored_13_unicode_s:
+        flag += chr(n)
+
+    return flag
+
+print(challenge(s,n))
 
 
