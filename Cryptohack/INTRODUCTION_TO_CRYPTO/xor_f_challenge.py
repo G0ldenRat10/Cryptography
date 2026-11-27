@@ -22,6 +22,6 @@ key = key_part + b'y'
 print(f"Current key: {key}")
 
 # flag = cipher XOR key (asocijativnost)
-#flag = strxor(cipher)
+flag = strxor(cipher, key)
 
 
