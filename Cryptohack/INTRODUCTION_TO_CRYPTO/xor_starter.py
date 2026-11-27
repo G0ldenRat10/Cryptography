@@ -41,6 +41,6 @@ def challenge(s,n):
 
     return flag
 
-print(challenge(s,n))
+print(f"The flag is crypto/{challenge(s,n)}/")
 
 
