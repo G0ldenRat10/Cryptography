@@ -17,7 +17,7 @@ known = b"crypto{"
 
 # mora ZIP jer CIPHER i deo flag-a nisu iste duzine pa nije moguc XOR sa strxor
 key_part = bytes(c ^ k for c, k in zip(cipher,known))  # kad istekne known i ostane ostatak cipher-a ne uparuje ga dalje nisacim
-key_part += b'y'
-print(key_part)
+key = key_part + b'y'
+print(f"Current key: {key}")
 
 
