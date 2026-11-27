@@ -23,5 +23,8 @@ But first, you may want to implement your own function to solve this.
 
 s = "label"
 n = 13 
-print(encode(s))
+unicode_s = ""
+for l in s:
+    unicode_s += ord(l)
+print(unicode_s)
 
