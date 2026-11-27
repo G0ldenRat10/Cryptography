@@ -26,8 +26,8 @@ KEY2 ^ KEY3 = c1545756687e7573db23aa1c3452a098b71a7fbf0fddddde5fc1
 FLAG ^ KEY1 ^ KEY3 ^ KEY2 = 04ee9855208a2cd59091d04767ae47963170d1660df7f56f5faf
 
 Before you XOR these objects, be sure to decode from hex to bytes.
-
 """
+
 from Crypto.Util.strxor import strxor
 
 key1 = bytes.fromhex("a6c8b6733c9b22de7bc0253266a3867df55acde8635e19c73313")
@@ -35,6 +35,10 @@ key2XORkey1 = bytes.fromhex("37dcb292030faa90d07eec17e3b1c6d8daf94c35d4c9191a5e1
 key2XORkey3 = bytes.fromhex("c1545756687e7573db23aa1c3452a098b71a7fbf0fddddde5fc1")
 flagXORkey1XORkey3XORkey2 = bytes.fromhex("04ee9855208a2cd59091d04767ae47963170d1660df7f56f5faf")
 
+# Jedan nacin:
 key2 = bytes(a ^ b for a, b in zip(key2XORkey1, key1))  # zip spaja npr: a = [1,2,3] b = [4,5,6] u [(1,4),(2,5),(3,6)]
+print(key2)
+# Drugi nacin:
+key2 = strxor(key2XORkey1,key1)
 print(key2)
 
