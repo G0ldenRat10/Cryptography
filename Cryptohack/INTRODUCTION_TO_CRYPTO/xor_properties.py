@@ -35,4 +35,5 @@ key2XORkey3 = bytes.fromhex("c1545756687e7573db23aa1c3452a098b71a7fbf0fddddde5fc
 flagXORkey1XORkey3XORkey2 = bytes.fromhex("04ee9855208a2cd59091d04767ae47963170d1660df7f56f5faf")
 
 key2 = key2XORkey1 ^ key1
+print(key2)
 
