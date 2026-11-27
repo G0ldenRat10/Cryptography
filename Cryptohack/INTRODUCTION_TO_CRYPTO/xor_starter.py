@@ -30,6 +30,6 @@ for l in s:
 print(f"Before XOR with 13: {unicode_s}")
 
 for n in unicode_s:
-    n ^= 13
+    n = n ^ 13
 print(f"After XOR with 13: {unicode_s}")
 
