@@ -12,6 +12,8 @@ cipher = bytes.fromhex("73626960647f6b206821204f21254f7d694f7624662065622127234f
 
 # Jedan Byte ima 8 bitova, 2 na 8i stepen = 256 => 0 - 255
 for key in range(256):
-    result = bytes(byte ^ key for byte in cipher)
+    result = bytes(byte ^ key for byte in cipher) # svaki bajt pojedinacno u cipher-u i XOR sa kljucem u range (256) vraca rezultat
+    print(key,result)
+
 
         
