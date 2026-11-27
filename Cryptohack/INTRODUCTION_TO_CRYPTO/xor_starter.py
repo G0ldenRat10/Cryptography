@@ -23,8 +23,9 @@ But first, you may want to implement your own function to solve this.
 
 s = "label"
 n = 13 
+
 unicode_s = []
 for l in s:
     unicode_s.append(ord(l))
-print(unicode_s)
+
 
