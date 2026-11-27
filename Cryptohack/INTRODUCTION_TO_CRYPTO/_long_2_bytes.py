@@ -13,8 +13,16 @@ hex bytes: [0x48, 0x45, 0x4c, 0x4c, 0x4f]
 base-16: 0x48454c4c4f
 base-10: 310400273487
 
-Python's PyCryptodome library implements this with the methods bytes_to_long() and long_to_bytes(). You will first have to install PyCryptodome and import it with from Crypto.Util.number import *. For more details check the FAQ.
+Python's PyCryptodome library implements this with the methods bytes_to_long() and long_to_bytes(). 
+You will first have to install PyCryptodome and import it with from Crypto.Util.number import *.
 
 Convert the following integer back into a message:
 """
 
+base_10_integer = 11515195063862318899931685488813747395775516287289682636499965282714637259206269 
+
+
+from Crypto.Util.number import *
+
+result = long_to_bytes(base_10_integer)
+print(result)
